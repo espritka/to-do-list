@@ -1,0 +1,88 @@
+<html>
+	<head>
+		<title>Kasia Lew's  TO-DO LIST</title>
+		<style>
+			
+			input[type=checkbox]:checked + span.strikethrough {
+				text-decoration: line-through;
+			}
+			
+			h1 {
+				font-family: Monospace, Verdana, Sans-serif;
+				font-size: 60px;
+				margin: auto;
+				margin-top: 100px;
+				text-align: left;
+				
+			}
+			
+			p {
+				margin: auto;
+				margin-top: 60px;
+				text-align: left;
+			}
+			
+			button {
+				border-radius: 15px;
+				border-color: red;
+				font-family: Monospace, Verdana, Sans-serif;
+				font-size: 25px;
+				text-align: left;
+				margin: auto;
+			}
+			
+			input {
+				border-color: black;
+				border-style: solid;
+				font-family: Monospace, Verdana, Sans-serif;
+				font-size: 20px;
+				margin: auto;
+			}
+			
+			span {
+				font-family: Monospace, Verdana, Sans-serif;
+				font-size: 25px;
+				margin: auto;
+				text-align: left;
+			}
+			
+			ul {
+				font-family: Monospace, Verdana, Sans-serif;
+				font-size: 20px;
+				margin: auto;
+				margin-top: 18px;
+				margin-left: 5px;
+				text-align: left;
+				list-style-position: inside;
+			}
+				
+			div {
+				margin: auto;
+				width: 60%;
+					
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<h1>My TO-DO List</h1>
+		
+			<!-- Here I create a paragraph with add button and a box with input space -->
+			<p>
+				<button id="button1">Add new to-do</button>
+				<input type="text" id="userInput"></input>
+			</p>
+			
+			<!-- Here I create unordered list, and user will put TODO on it -->
+			<ul id="myList">
+			</ul>
+			
+			<!-- Here I create a paragraph with delete button -->
+			<p>
+				<button id="button2">Remove from list</button>
+			</p>
+		</div>
+		<script src="todoList jS.js"></script>	
+		
+	</body>
+</html>
